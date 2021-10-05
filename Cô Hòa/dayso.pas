@@ -16,12 +16,12 @@ end;
 procedure tim;
 var i,v,max:longint;
 begin
-	s[i]:=a[1]+a[2];
+	s[1]:=a[1]+a[2];
 	for i:=2 to n-1 do 
-	a[i]:=a[i-1]+a[i]+a[i+1];
+	s[i]:=a[i-1]+a[i]+a[i+1];
 	s[n]:=a[n-1]+a[n];
 
-	max:=maxlongint;
+	max:=-maxlongint;
 	for i:=1 to n do 
 	if s[i]>max then 
 	begin
