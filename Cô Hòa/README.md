@@ -1,4 +1,0 @@
-# PascalClone
-# PascalClone
-# PascalClone
-# PascalClone
