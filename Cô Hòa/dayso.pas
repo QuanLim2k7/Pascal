@@ -30,7 +30,9 @@ begin
 	end;
 write(g,max);
 writeln(g);
-write(g,a[v-1],' ',a[v],' ',a[v+1]);
+if v=1 then write(g,a[1],' ',a[2]) else
+if v=n then write(g,a[v-1],' ',a[v])
+	else write(g,a[v-1],' ',a[v],' ',a[v+1]);
 end;
 begin
 	nhap;
