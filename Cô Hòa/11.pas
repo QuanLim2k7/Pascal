@@ -1,4 +1,3 @@
-
 uses crt;
 type
 hs=record
@@ -30,6 +29,15 @@ writeln('Danh sach sau sap xep: ');
 for i:=1 to stt do writeln(i,' : ',t[i].ho, t[i].ten);
 end;
 
+procedure swap;
+begin
+ho1:=t[i].ho;
+ten1:=t[i].ten;
+t[i].ho:=t[j].ho;
+t[i].ten:=t[j].ten;
+t[j].ho:=ho1;
+t[j].ten:=ten1;
+end;
 procedure sapxep;
 begin
 {Sap xep}
@@ -41,21 +49,10 @@ if t[i].ten = t[j].ten then
 if t[i].ho > t[j].ho then swap
 end;
 end;
-
-procedure swap;
-begin
-ho1:=t[i].ho;
-ten1:=t[i].ten;
-t[i].ho:=t[j].ho;
-t[i].ten:=t[j].ten;
-t[j].ho:=ho1;
-t[j].ten:=ten1;
-end;
-
 begin
 input;
 sapxep;
 output;
 
 readln;
-end.Quan123
+end.
